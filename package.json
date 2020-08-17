@@ -10,7 +10,8 @@
     "transpiling/basic": "babel --config-file ./transpiling/basic-babel.config.json transpiling/basic.js -o transpiling/basic.out.js",
     "transpiling/react": "babel --config-file ./transpiling/react-babel.config.json transpiling/react.jsx -o transpiling/react.out.js",
     "typescript/basic": "tsc typescript/basic.ts",
-    "bundling/basic": "cd bundling/rollup; rollup -c rollup.config.js"
+    "bundling/basic": "cd bundling/basic; rollup -c rollup.config.js",
+    "bundling/minified": "cd bundling/minified; rollup -c rollup.config.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
