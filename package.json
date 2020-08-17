@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf transpiling/*.out.js typescript/*.js bundling/*/dist",
-    "transpiling/basic": "babel --config-file ./transpiling/basic-babel.config.json transpiling/basic.js -o transpiling/basic.out.js",
-    "transpiling/react": "babel --config-file ./transpiling/react-babel.config.json transpiling/react.jsx -o transpiling/react.out.js",
+    "transpiling/basic": "babel --presets=@babel/preset-env transpiling/basic.js -o transpiling/basic.out.js",
+    "transpiling/react": "babel --presets=@babel/preset-{env,react} transpiling/react.jsx -o transpiling/react.out.js",
     "typescript/basic": "tsc typescript/basic.ts",
     "bundling/basic": "cd bundling/basic; rollup -c rollup.config.js",
     "bundling/minified": "cd bundling/minified; rollup -c rollup.config.js",
