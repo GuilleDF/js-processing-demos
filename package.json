@@ -11,7 +11,8 @@
     "transpiling/react": "babel --config-file ./transpiling/react-babel.config.json transpiling/react.jsx -o transpiling/react.out.js",
     "typescript/basic": "tsc typescript/basic.ts",
     "bundling/basic": "cd bundling/basic; rollup -c rollup.config.js",
-    "bundling/minified": "cd bundling/minified; rollup -c rollup.config.js"
+    "bundling/minified": "cd bundling/minified; rollup -c rollup.config.js",
+    "bundling/dependencies": "cd bundling/dependencies; rollup -c rollup.config.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
@@ -19,11 +20,13 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
+    "@rollup/plugin-node-resolve": "^9.0.0",
     "rollup": "^2.26.3",
     "rollup-plugin-terser": "^7.0.0",
     "typescript": "^3.9.7"
   },
   "dependencies": {
+    "ramda": "^0.27.1",
     "react": "^16.13.1"
   }
 }
