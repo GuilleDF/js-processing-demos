@@ -1,0 +1,24 @@
+{
+  "name": "js-processing-demos",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:GuilleDF/js-processing-demos.git",
+  "author": "Guille De Fermin <guillermo.defermin@taxfix.de>",
+  "license": "MIT",
+  "scripts": {
+    "transpiling/basic": "babel --config-file ./transpiling/basic-babel.config.json transpiling/basic.js -o transpiling/basic.out.js",
+    "transpiling/react": "babel --config-file ./transpiling/react-babel.config.json transpiling/react.jsx -o transpiling/react.out.js",
+    "typescript/basic": "tsc typescript/basic.ts"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "react": "^16.13.1"
+  }
+}
