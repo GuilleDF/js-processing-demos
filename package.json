@@ -6,13 +6,13 @@
   "author": "Guille De Fermin <guillermo.defermin@taxfix.de>",
   "license": "MIT",
   "scripts": {
-    "clean": "rm -rf transpiling/*.out.js typescript/*.js bundling/*/dist",
-    "transpiling/basic": "babel --presets=@babel/preset-env transpiling/basic.js -o transpiling/basic.out.js",
-    "transpiling/react": "babel --presets=@babel/preset-{env,react} transpiling/react.jsx -o transpiling/react.out.js",
-    "typescript/basic": "tsc typescript/basic.ts",
-    "bundling/basic": "cd bundling/basic; rollup -c rollup.config.js",
-    "bundling/minified": "cd bundling/minified; rollup -c rollup.config.js",
-    "bundling/dependencies": "cd bundling/dependencies; rollup -c rollup.config.js"
+    "clean": "rm -rf demos/transpiling/*.out.js demos/typescript/*.js demos/bundling/*/dist",
+    "transpiling/basic": "babel --presets=@babel/preset-env demos/transpiling/basic.js -o demos/transpiling/basic.out.js",
+    "transpiling/react": "babel --presets=@babel/preset-{env,react} demos/transpiling/react.jsx -o demos/transpiling/react.out.js",
+    "typescript/basic": "tsc demos/typescript/basic.ts",
+    "bundling/basic": "cd demos/bundling/basic; rollup -c rollup.config.js",
+    "bundling/minified": "cd demos/bundling/minified; rollup -c rollup.config.js",
+    "bundling/dependencies": "cd demos/bundling/dependencies; rollup -c rollup.config.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
