@@ -6,6 +6,6 @@ export default [
     output: {
       dir: 'dist',
     },
-    plugins: [nodeResolve({ rootDir: '../..' })],
+    plugins: [nodeResolve({ rootDir: '../../..' })],
   },
 ];
