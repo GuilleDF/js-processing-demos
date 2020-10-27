@@ -12,7 +12,8 @@
     "typescript/basic": "tsc demos/2-typescript/basic.ts",
     "bundling/basic": "cd demos/4-bundling/1-basic; rollup -c rollup.config.js",
     "bundling/minified": "cd demos/4-bundling/2-minified; rollup -c rollup.config.js",
-    "bundling/dependencies": "cd demos/4-bundling/3-dependencies; rollup -c rollup.config.js"
+    "bundling/dependencies": "cd demos/4-bundling/3-dependencies; rollup -c rollup.config.js",
+    "bundling/code-splitting": "cd demos/4-bundling/4-code-splitting; rollup -c rollup.config.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
